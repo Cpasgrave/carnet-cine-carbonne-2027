@@ -20,9 +20,9 @@
   const durationText = value => (value || '').replace(/(\d+)\s*h\s*(\d{2})/i, '$1 h $2');
   const sourceUrl = source => typeof source==='string'?source:source?.url;
   function notify(message) { $('toast').textContent=message; $('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,4300); }
-  const book = window.CarnetNotes(new Set(byId.keys()), next => {
+  const book = window.CarnetNotes(new Set(byId.keys()), (next, edited) => {
     ratings = next;
-    if (!document.querySelector('.video-stage iframe')) render(true);
+    if (edited || !document.querySelector('.video-stage iframe')) render(true);
   }, message => { $('sync-status').textContent = message; });
   document.querySelector('.backup-actions').hidden = !book.editable;
   $('rated-view-label').textContent = book.editable ? 'Mes films notés' : 'Films notés';

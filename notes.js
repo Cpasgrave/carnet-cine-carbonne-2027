@@ -49,7 +49,8 @@ window.CarnetNotes = function (ids, onChange, onStatus) {
       let url = publicURL + '?v=' + Math.floor(Date.now() / 15000);
       const options = {cache:'no-store', signal:AbortSignal.timeout(15000)};
       if (home) {
-        url = 'api/notes';
+        url = 'http://127.0.0.1:8768/api/notes';
+        options.keepalive = true;
         options.method = 'POST';
         options.headers = {'Content-Type':'application/json'};
         options.body = JSON.stringify({entries});
@@ -89,7 +90,7 @@ window.CarnetNotes = function (ids, onChange, onStatus) {
   function apply(changes) {
     if (!editable || !merge(changes)) return;
     persist();
-    onChange(scores());
+    onChange(scores(), true);
     status(home ? 'Envoi des notes à GitHub…' : 'Fichier local · sauvegarde navigateur');
     schedule(0);
   }
