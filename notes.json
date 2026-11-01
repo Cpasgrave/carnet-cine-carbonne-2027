@@ -1,1 +1,85 @@
-{"version":1,"entries":{}}
+{
+  "entries": {
+    "anything-but-ghosts": {
+      "score": 8,
+      "updatedAt": "2026-11-01T16:24:14.672Z"
+    },
+    "atlas-de-l-univers": {
+      "score": 6,
+      "updatedAt": "2026-11-01T14:03:52.902Z"
+    },
+    "gaza-annee-zero": {
+      "score": 7,
+      "updatedAt": "2026-11-01T00:27:50.503Z"
+    },
+    "gioia-mia": {
+      "score": 7,
+      "updatedAt": "2026-11-01T00:45:18.352Z"
+    },
+    "johnny": {
+      "score": 6,
+      "updatedAt": "2026-11-01T16:34:31.782Z"
+    },
+    "l-exorciste-martyrs": {
+      "score": 7,
+      "updatedAt": "2026-11-01T00:19:03.442Z"
+    },
+    "la-maison-du-vent": {
+      "score": 8,
+      "updatedAt": "2026-11-01T13:50:18.437Z"
+    },
+    "la-spirale": {
+      "score": 8,
+      "updatedAt": "2026-11-01T12:23:43.428Z"
+    },
+    "le-bois-de-klara": {
+      "score": 8,
+      "updatedAt": "2026-11-01T01:20:10.215Z"
+    },
+    "midday-meal": {
+      "score": 8,
+      "updatedAt": "2026-11-01T13:44:59.058Z"
+    },
+    "moscas": {
+      "score": 8,
+      "updatedAt": "2026-11-01T16:30:21.263Z"
+    },
+    "noise": {
+      "score": 6,
+      "updatedAt": "2026-11-01T00:37:49.756Z"
+    },
+    "quelques-jours-a-nagi": {
+      "score": 6,
+      "updatedAt": "2026-11-01T13:32:26.830Z"
+    },
+    "tetes-brulees": {
+      "score": 1,
+      "updatedAt": "2026-11-01T13:19:48.599Z"
+    },
+    "to-hold-a-mountain": {
+      "score": 9,
+      "updatedAt": "2026-11-01T14:00:52.871Z"
+    },
+    "tu-me-diras": {
+      "score": 7,
+      "updatedAt": "2026-11-01T00:44:03.010Z"
+    },
+    "un-homme-a-la-mer": {
+      "score": 9,
+      "updatedAt": "2026-11-01T13:22:16.393Z"
+    },
+    "un-rayon-de-lumiere-asgari": {
+      "score": 2,
+      "updatedAt": "2026-11-01T13:29:18.430Z"
+    },
+    "winter-of-the-crow": {
+      "score": 6,
+      "updatedAt": "2026-11-01T00:14:42.078Z"
+    },
+    "you-dont-belong-here": {
+      "score": 8,
+      "updatedAt": "2026-11-01T14:09:52.877Z"
+    }
+  },
+  "version": 1
+}
