@@ -50,6 +50,7 @@
   }
   function label(f) {
     if(f.isReissue) return 'Reprise / réédition';
+    if(f.releaseStatus==='outside') return 'Hors période · '+shortDate(f.releaseDate);
     if(f.releaseStatus==='conflicting') return 'Date à vérifier';
     return f.releaseDate ? shortDate(f.releaseDate)+' 2027' : 'Piste festival';
   }
@@ -72,6 +73,7 @@
   }
   function detailAlert(f) {
     if(f.isReissue) return '<p class="detail-alert"><strong>Reprise / réédition.</strong> À considérer à part : ce film a déjà connu une sortie en France.</p>';
+    if(f.releaseStatus==='outside') return `<p class="detail-alert"><strong>Sortie hors période : ${esc(fullDate(f.releaseDate))}.</strong> Ce film est conservé avec ses notes, mais sa date actuelle ne permet plus de le retenir dans les mercredis d’avant-première du carnet.</p>`;
     if(f.releaseStatus==='conflicting') return '<p class="detail-alert"><strong>Date française à vérifier.</strong> Les sources ne permettent pas de confirmer un mercredi de sortie. Ce film est conservé comme piste, hors calendrier vérifié.</p>';
     if(!f.releaseDate) return '<p class="detail-alert"><strong>Piste de festival.</strong> Pas de date française confirmée dans cette recherche. Vérifier la sortie, les droits France et la disponibilité avant de le retenir.</p>';
     if(f.releaseDate==='2027-03-03') return '<p class="detail-alert"><strong>Avant-première possible du 26 février au 2 mars.</strong> À partir du mercredi 3 mars, le film sera en sortie nationale si cette date est maintenue.</p>';

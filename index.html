@@ -8,11 +8,11 @@
   <title>Festival 2027 · Carnet de programmation · Ciné Carbonne</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css?v=20261101-public">
-  <script defer src="data/catalog.js?v=20261102"></script>
-  <script defer src="data/palmares.js?v=20261102"></script>
+  <script defer src="data/catalog.js?v=20261111"></script>
+  <script defer src="data/palmares.js?v=20261111"></script>
   <script defer src="core.js"></script>
   <script defer src="notes.js?v=20261101-public"></script>
-  <script defer src="app.js?v=20261102"></script>
+  <script defer src="app.js?v=20261111"></script>
 </head>
 <body>
   <a class="skip-link" href="#catalogue">Aller aux films</a>
@@ -22,7 +22,7 @@
       <div class="masthead-title"><p class="eyebrow">Carbonne fait son cinéma</p><h1>Carnet de programmation <span class="year">2027</span></h1></div>
       <div class="festival-ticket"><span>Le festival</span><strong>26 fév. <em>—</em> 7 mars</strong></div>
     </div>
-    <div class="shell ledger"><p id="inventory">Recherche en cours de chargement…</p><p class="checked-date">Dernier scan des sorties · <strong>2 novembre 2026</strong></p><button id="method-button" class="quiet-button">À propos de la recherche <span aria-hidden="true">↗</span></button></div>
+    <div class="shell ledger"><p id="inventory">Recherche en cours de chargement…</p><p class="checked-date">Dernier scan des sorties · <strong>11 novembre 2026</strong></p><button id="method-button" class="quiet-button">À propos de la recherche <span aria-hidden="true">↗</span></button></div>
   </header>
   <main class="shell" id="catalogue">
     <div class="workspace-nav"><nav class="view-tabs" aria-label="Vues du catalogue">
@@ -32,7 +32,7 @@
     </nav><span id="sync-status" class="sync-status" role="status"></span><div class="backup-actions" hidden><a href="https://cpasgrave.github.io/carnet-cine-carbonne-2027/" target="_blank" rel="noopener noreferrer">Voir le carnet public ↗</a><button id="export-button" title="Sauvegarder les notes dans un fichier JSON">↓ Sauvegarder mes notes</button><button id="import-button" title="Fusionner les notes d’une sauvegarde">↑ Restaurer</button><input id="import-file" type="file" accept="application/json,.json" hidden></div></div>
     <details id="palmares" class="award-register">
       <summary><span>✦ &nbsp;Palmarès des festivals</span><small id="award-counts"></small></summary>
-      <div class="register-body"><p>Registre des longs métrages primés, complété le <strong>2 novembre 2026</strong>. Un même film peut avoir reçu des prix dans plusieurs festivals. Les sorties restent susceptibles d’être déplacées.</p>
+      <div class="register-body"><p>Registre des longs métrages primés, complété le <strong>11 novembre 2026</strong>. Un même film peut avoir reçu des prix dans plusieurs festivals. Les sorties restent susceptibles d’être déplacées.</p>
       <div class="register-filters"><label>Festival <select id="award-festival"><option value="">Tous les festivals</option></select></label><label>Sortie française <select id="award-status"><option value="eligible">Dans nos 18 mercredis</option><option value="no-date">Date non établie</option><option value="outside">Hors période</option><option value="conflict">À vérifier</option><option value="">Tous les lauréats</option></select></label><label>Rechercher <input id="award-search" type="search" placeholder="Titre ou cinéaste…"></label></div>
       <p id="award-result-count" aria-live="polite"></p><div id="award-results"></div></div>
     </details>
@@ -57,7 +57,7 @@
       <div id="research-coverage"></div>
     </section>
   </main>
-  <footer class="shell footer"><p><strong>Ciné Carbonne</strong> · Carnet de repérage 2027<br><span>Affiches et photographies : ayants droit respectifs. Sources dans les fiches.</span></p><p>Palmarès · 02.11.2026<br><span>Notes de programmation · Ciné Carbonne.</span></p></footer>
+  <footer class="shell footer"><p><strong>Ciné Carbonne</strong> · Carnet de repérage 2027<br><span>Affiches et photographies : ayants droit respectifs. Sources dans les fiches.</span></p><p>Palmarès · 11.11.2026<br><span>Notes de programmation · Ciné Carbonne.</span></p></footer>
   <div id="toast" class="toast" role="status" hidden></div>
   <dialog id="photo-dialog"><button id="close-photo" class="photo-close" aria-label="Fermer la photo">×</button><img id="large-photo" alt=""><p id="photo-caption"></p></dialog>
   <noscript><p>Activez JavaScript pour utiliser le calendrier et les notes. Les données restent consultables dans data/catalog.json.</p></noscript>
